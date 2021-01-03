@@ -3,99 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strar Coding Center</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap">
+    <title>Star Coding Center</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Neucha&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Шапка с навигацией-->
-    <header>
-        <div>
-            <ul>
-                <li>Лишити заявку</li>
-                <li><a href="mailto:info@devstudio.com" lang="en">Написати нам</a></li>
-                <li><a href="tel:+380504402412">Подзвонити нам</a></li>
-            </ul>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li>Logo</li>
-                    <li>Наші роботи</li>
-                    <li>Перелік послуг</li>
-                    <li>Пошук</li>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="logo" lang="en">
+                <svg class="icon-mb">
+                    <use href="./images/social.svg#icon-mercedes" 
+                    height="20" width="20"></use>
+                </svg>
+                Star Coding Center</a>
+            <div class="right-side">
+                <nav class="list">
+                    <ul class="list nav">
+                        <li class="item">
+                            <a class="link" href="#work-examle">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-truck" 
+                                    height="20" width="20"></use>
+                                </svg>
+                                Наші роботи</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#price-list">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-wallet" 
+                                    height="20" width="20"></use>
+                                </svg>
+                                Перелік послуг</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#Lorem">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-news" 
+                                    height="20" width="20"></use>
+                                </svg>
+                                Lorem</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="list contact">
+                    <li class="item">
+                        <a class="link" href="mailto:info@devstudio.com" 
+                        lang="en">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-mail" 
+                                height="20" width="20"></use>
+                            </svg>
+                            Написати нам</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="tel:+380504402412">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-phone" 
+                                height="20" width="20"></use>
+                            </svg>
+                            Подзвонити нам</a>
+                    </li>
+                        <li class="item">
+                            <a class="link" href="">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-search" 
+                                    height="20" width="20"></use>
+                                </svg>
+                                Пошук</a>
+                        </li>
                 </ul>
-            </nav>
-        </div>  
+            </div>
+            
+        </div>
     </header>
 
-    <!--hero-->
-    <section>
-        <div>
-            Logo
-            <h1>Кодування <span lang="en">Mercedes-Benz</span></h1>
+    <!-- hero-->
+<section class="hero">
+    <div class="overlay">
+            <h1 class="title">Кодування для вашого<br>автомобіля</h1>
+    </div>
+</section>
+
+<!--example-->
+<section class="section example">
+    <div class="container">
+        <h2 class="title" id="work-examle">Приклади наших робіт</h2>
+        <div class="button">
+            <ul class="list">
+                <li class="item"><button type="button" class="filter">Всі</button></li>
+                <li class="item"><button type="button" class="filter">Внутрішні</button></li>
+                <li class="item"><button type="button" class="filter">Зовнішні</button></li>
+                <li class="item"><button type="button" class="filter">Двигун</button></li>
+            </ul>
         </div>
-        <p>Плюшки для вашого автомобіля</p>
-    </section>
+        <div class="card-set">
+            <ul class="list">
+                <li class="item">
+                    <img class="photo" src="./images/images.jpg" 
+                    alt="Приклад як вигладає Навігація">
+                    <p>Навігація</p>
+                </li>
+                <li class="item">
+                    <img class="photo" src="./images/images.jpg" 
+                    alt="Приклад як вигладає Додатковий режим АКПП">
+                    <p>Додатковий режим АКПП</p>
+                </li>
+                <li class="item">
+                    <img class="photo" src="./images/images.jpg" 
+                    alt="Приклад як вигладає Залишок пального в літрах">
+                    <p>Залишок пального в літрах</p>
+                </li>
+                <li class="item">
+                    <img class="photo" src="./images/images.jpg" 
+                    alt="Приклад як вигладає Зміна регіону">
+                    <p>Зміна регіону</p>
+                </li>
+                <li class="item">
+                    <img class="photo" src="./images/images.jpg" 
+                    alt="Приклад як вигладає Зміна мови">
+                    <p>Зміна мови</p>
+                </li>
+                <li class="item">
+                    <img class="photo" src="./images/images.jpg" 
+                    alt="Приклад як вигладає Зміна одиниць виміру">
+                    <p>Зміна одиниць виміру</p>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</section>
 
-    <!--done-->
-    <section>
-        <h2>Приклади наших робіт</h2>
-        <ul>
-            <li>Навігація</li>
-            <li>Додатковий режим АКПП</li>
-            <li>Залишок пального в літрах</li>
-            <li>Зміна регіону</li>
-            <li>Зміна мови</li>
-            <li>Зміна одиниць виміру</li>
-        </ul>
-    </section>
+<!--services-->
+<section class="section service">
+    <div class="container">
+        <h2 class="title" id="price-list">Перелік послуг</h2>
+        <table>
+            <tr>
+                <td>$100</td>
+                <td>...</td>
+                <td>Навігація</td>
+            </tr>
+            <tr>
+                <td>$100</td>
+                <td>...</td>
+                <td>Додатковий режим АКПП</td>
+            </tr>
+            <tr>
+                <td>$100</td>
+                <td>...</td>
+                <td>Залишок пального в літрах</td>
+            </tr>
+            <tr>
+                <td>$100</td>
+                <td>...</td>
+                <td>Зміна регіону</td>
+            </tr>
+            <tr>
+                <td>$100</td>
+                <td>...</td>
+                <td>Зміна мови</td>
+            </tr>
+            <tr>
+                <td>$100</td>
+                <td>...</td>
+                <td>Зміна одиниць виміру</td>
+            </tr>
+        </table>
+    </div>
+</section>
 
-    <!--services-->
-    <section>
-        <h2>Перелік послуг</h2>
-            <table>
-                <tr>
-                    <td>$100</td>
-                    <td>Навігація</td>
-                </tr>
-                <tr>
-                    <td>$100</td>
-                    <td>Додатковий режим АКПП</td>
-                </tr>
-                <tr>
-                    <td>$100</td>
-                    <td>Залишок пального в літрах</td>
-                </tr>
-                <tr>
-                    <td>$100</td>
-                    <td>Зміна регіону</td>
-                </tr>
-                <tr>
-                    <td>$100</td>
-                    <td>Зміна мови</td>
-                </tr>
-                <tr>
-                    <td>$100</td>
-                    <td>Зміна одиниць виміру</td>
-                </tr>
-            </table>
-    </section>
+<!--calculate-->
+<section class="section lorem">
+    <div class="container">
+        <h2 class="title" id="Lorem">Lorem ipsum, dolor sit</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde vero eligendi amet dolor excepturi nisi iure quod. Itaque, pariatur!</p>
+    </div>
+</section>
 
-    <!--calculate-->
-    <section>
-
-    </section>
-    
-    <footer>
-        logo
-        050-440-24-12
-        написать
-        facebook
-        instagram
-    </footer>
+<footer class="footer">
+    <div class="container">
+            <a href="./index.html" class="logo" lang="en">
+                <svg class="icon-mb">
+                    <use href="./images/social.svg#icon-mercedes" 
+                    height="20" width="20"></use>
+                </svg>
+                Star Coding Center</a>
+        <div class="second-part">    
+            <ul class="list contact">
+                <li class="item title">
+                    <span>Наші контакти</span>
+                </li>
+                <li class="item">
+                    <a class="link" href="mailto:starcenter@gmail.com" lang="en">
+                        <svg class="icon">
+                            <use href="./images/sprite.svg#icon-mail" 
+                            height="15" width="15"></use>
+                        </svg>
+                        starcenter@gmail.com</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="tel:+380504402412">
+                        <svg class="icon">
+                            <use href="./images/sprite.svg#icon-phone" 
+                            height="15" width="15"></use>
+                        </svg>
+                        +38-050-440-24-12</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="">
+                        <svg class="icon">
+                            <use href="./images/sprite.svg#icon-world" 
+                            height="15" width="15"></use>
+                        </svg>
+                        м. Київ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="third-part">
+            <h3 class="title">Ми в соц. мережах</h3>
+            <ul class="list">
+                <li>
+                    <a class="link" href="https://www.facebook.com/">
+                        <svg class="icon">
+                            <use href="./images/social.svg#icon-facebook" 
+                            height="20" width="20" aria-label="facebook">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="https://www.instagram.com/">
+                        <svg class="icon">
+                            <use href="./images/social.svg#icon-instagram" 
+                            height="20" width="20" aria-label="instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
