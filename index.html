@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Coding Center</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Neucha&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Neucha&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -19,65 +18,43 @@
                     <use href="./images/social.svg#icon-mercedes" 
                     height="20" width="20"></use>
                 </svg>
-                Star Coding Center</a>
-            <div class="right-side">
-                <nav class="list">
-                    <ul class="list nav">
-                        <li class="item">
-                            <a class="link" href="#work-examle">
-                                <svg class="icon">
-                                    <use href="./images/sprite.svg#icon-truck" 
-                                    height="20" width="20"></use>
-                                </svg>
-                                Наші роботи</a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="#price-list">
-                                <svg class="icon">
-                                    <use href="./images/sprite.svg#icon-wallet" 
-                                    height="20" width="20"></use>
-                                </svg>
-                                Перелік послуг</a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="#Lorem">
-                                <svg class="icon">
-                                    <use href="./images/sprite.svg#icon-news" 
-                                    height="20" width="20"></use>
-                                </svg>
-                                Lorem</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="list contact">
+            Star Coding Center</a>
+            <nav class="navigation">
+                <ul class="list navigation">
                     <li class="item">
-                        <a class="link" href="mailto:info@devstudio.com" 
-                        lang="en">
+                        <a class="link" href="#about">
                             <svg class="icon">
-                                <use href="./images/sprite.svg#icon-mail" 
+                                <use href="./images/sprite.svg#icon-search" 
                                 height="20" width="20"></use>
                             </svg>
-                            Написати нам</a>
+                            Про нас</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="tel:+380504402412">
+                        <a class="link" href="#work-examle">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-truck" 
+                                height="20" width="20"></use>
+                            </svg>
+                            Наші роботи</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#price-list">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-wallet" 
+                                height="20" width="20"></use>
+                            </svg>
+                            Перелік послуг</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#contacts">
                             <svg class="icon">
                                 <use href="./images/sprite.svg#icon-phone" 
                                 height="20" width="20"></use>
                             </svg>
-                            Подзвонити нам</a>
+                            Контакти</a>
                     </li>
-                        <li class="item">
-                            <a class="link" href="">
-                                <svg class="icon">
-                                    <use href="./images/sprite.svg#icon-search" 
-                                    height="20" width="20"></use>
-                                </svg>
-                                Пошук</a>
-                        </li>
-                </ul>
-            </div>
-            
+                    </ul>
+            </nav>
         </div>
     </header>
 
@@ -85,6 +62,14 @@
 <section class="hero">
     <div class="overlay">
             <h1 class="title">Кодування для вашого<br>автомобіля</h1>
+    </div>
+</section>
+
+<!--about-->
+<section class="section about">
+    <div class="container">
+        <h2 class="title" id="about">Про нас</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laborum sint labore impedit saepe. Accusamus, eum aliquam. Ratione voluptate aut optio perspiciatis voluptatibus tempora quibusdam nostrum in. Impedit soluta, repellat beatae voluptate ipsa eius. Repudiandae ea illo officiis sint neque ex sapiente quam facilis ut, cum nam. Architecto, aspernatur natus.</p>
     </div>
 </section>
 
@@ -143,44 +128,36 @@
         <h2 class="title" id="price-list">Перелік послуг</h2>
         <table>
             <tr>
-                <td>$100</td>
+                <td class="price">$10</td>
                 <td>...</td>
                 <td>Навігація</td>
             </tr>
             <tr>
-                <td>$100</td>
+                <td class="price">$100</td>
                 <td>...</td>
                 <td>Додатковий режим АКПП</td>
             </tr>
             <tr>
-                <td>$100</td>
+                <td class="price">$1 000</td>
                 <td>...</td>
                 <td>Залишок пального в літрах</td>
             </tr>
             <tr>
-                <td>$100</td>
+                <td class="price">$10 000</td>
                 <td>...</td>
                 <td>Зміна регіону</td>
             </tr>
             <tr>
-                <td>$100</td>
+                <td class="price">$100 000</td>
                 <td>...</td>
                 <td>Зміна мови</td>
             </tr>
             <tr>
-                <td>$100</td>
+                <td class="price">$1 000 000</td>
                 <td>...</td>
                 <td>Зміна одиниць виміру</td>
             </tr>
         </table>
-    </div>
-</section>
-
-<!--calculate-->
-<section class="section lorem">
-    <div class="container">
-        <h2 class="title" id="Lorem">Lorem ipsum, dolor sit</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde vero eligendi amet dolor excepturi nisi iure quod. Itaque, pariatur!</p>
     </div>
 </section>
 
@@ -193,9 +170,9 @@
                 </svg>
                 Star Coding Center</a>
         <div class="second-part">    
-            <ul class="list contact">
+            <ul class="list">
                 <li class="item title">
-                    <span>Наші контакти</span>
+                    <span id="contacts">Наші контакти</span>
                 </li>
                 <li class="item">
                     <a class="link" href="mailto:starcenter@gmail.com" lang="en">
@@ -224,7 +201,7 @@
             </ul>
         </div>
         <div class="third-part">
-            <h3 class="title">Ми в соц. мережах</h3>
+            <p class="title">Ми в соц. мережах</p>
             <ul class="list">
                 <li>
                     <a class="link" href="https://www.facebook.com/">
@@ -236,7 +213,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="link" href="https://www.instagram.com/">
+                    <a class="link" href="https://www.instagram.com/star_coding_ua/">
                         <svg class="icon">
                             <use href="./images/social.svg#icon-instagram" 
                             height="20" width="20" aria-label="instagram">

@@ -1,20 +1,21 @@
 :root {
-  --text-color-primary: black;
-  --text-color-secondary: grey;
-  --bg-color-primary: #2f303a;
-  --bg-color-secondary: whitesmoke;
+  --text-color-primary: #27282d;
+  --text-color-secondary: #b2b2b2;
+  --text-color-header-footer: #fbefdf;
+  --bg-color-primary: #b2b2b2;
+  --bg-color-secondary: #fbefdf;
+  --bg-color-header-footer: #27282d;
   --accent-color: orange;
-  --bg-color-header-footer: black;
-  --text-color-header-footer: whitesmoke;
 }
 body {
   font-family: 'Neucha', cursive;
   font-style: normal;
-  font-weight: 700;
+  line-height: 1.5;
+  font-weight: 400;
   font-size: 20px;
 
-  background-color: rgb(215, 215, 215);
-  color: black;
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-primary);
 }
 img {
   display: block;
@@ -45,21 +46,25 @@ img {
 }
 /*header*/
 .header {
-  background-color: black;
+  background-color: var(--bg-color-header-footer);
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  font-size: 16px;
+  border-bottom: 1px solid var(--accent-color);
+  color: var(--text-color-secondary);
 }
 .header .container {
   display: flex;
-  align-items: center;
-  color: var(--text-color-secondary);
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
-.right-side {
+.navigation {
   margin-left: auto;
 }
-.header .list {
+.list.navigation {
   display: flex;
-  align-items: center;
+}
+.navigation .item + .item {
+  margin-left: 20px;
 }
 .icon-mb {
   display: flex;
@@ -71,13 +76,15 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  margin-right: 50px;
+
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-decoration: none;
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .logo:hover,
 .logo:focus {
@@ -85,43 +92,28 @@ img {
   fill: red;
   cursor: pointer;
 }
-.list.nav {
-  border-bottom: 1px solid var(--accent-color);
-  padding-bottom: 5px;
-}
-.list.contact {
-  padding-top: 5px;
-}
 .header .link {
   display: flex;
-  color: var(--text-color-header-footer);
   padding-top: 5px;
+  padding-right: 5px;
   padding-bottom: 5px;
+  padding-left: 5px;
+
   border: 1px solid transparent;
-  padding-right: 8px;
-  padding-left: 8px;
   border-radius: 5px;
-  justify-content: center;
-  align-items: center;
   fill: var(--text-color-header-footer);
-  min-width: 150px;
+  color: var(--text-color-header-footer);
 }
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  text-shadow: 4px 4px 4px rgba(255, 165, 0, 0.25),
-    4px 4px 4px rgba(255, 165, 0, 0.25);
   fill: var(--accent-color);
 }
 .header .icon {
   width: 20px;
   height: 20px;
   margin-right: 15px;
-}
-
-.header .item + .item {
-  margin-left: 30px;
 }
 
 /*hero*/
@@ -138,7 +130,7 @@ img {
       rgba(15, 15, 15, 0.9),
       rgba(15, 15, 15, 0.9)
     ),
-    url('../images/bg-photp.PNG');
+    url('../images/bg-photo2.jpg');
   background-color: var(--bg-color-header-footer);
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,7 +138,7 @@ img {
 }
 .hero .title {
   display: block;
-  color: whitesmoke;
+  color: var(--text-color-header-footer);
   margin-top: 0px;
   padding-top: 40px;
 }
@@ -155,9 +147,28 @@ img {
   padding-bottom: 40px;
 }
 
+/*About*/
+.section.about {
+  align-items: center;
+}
+.about .title,
+.about .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about .title {
+  margin-bottom: 10px;
+}
+.about .text {
+  text-align: justify;
+}
 /*example*/
 .section.example {
-  background-color: gray;
+  background-color: var(--bg-color-secondary);
 }
 .example .title {
   display: block;
@@ -165,7 +176,6 @@ img {
   margin-top: 0;
   margin-bottom: 20px;
 }
-
 .example .list {
   display: flex;
   justify-content: center;
@@ -183,7 +193,7 @@ img {
   border-radius: 4px;
 
   background-color: var(--accent-color);
-  border: 1px solid black;
+  border: 1px solid var(--text-color-primary);
 
   cursor: pointer;
   align-items: center;
@@ -205,10 +215,10 @@ img {
   flex-wrap: wrap;
 }
 .card-set .item {
+  text-align: center;
   margin-right: 20px;
   margin-top: 20px;
   width: calc((100% - 40px) / 3);
-  text-align: center;
 }
 .card-set .item:nth-child(3n) {
   margin-right: 0px;
@@ -222,37 +232,27 @@ img {
 .service .title {
   display: block;
   text-align: center;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 20px;
-  justify-content: center;
 }
 table {
   margin: 0 auto;
 }
-
-/*lorem*/
-.section.lorem {
-  background-color: grey;
-  align-items: center;
-}
-.lorem .title,
-.lorem .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.loerm .title {
-  margin-bottom: 10px;
+.service .price {
+  text-align: right;
 }
 /*footer*/
 .footer {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: grey;
-  background-color: black;
+
+  color: var(--text-color-header-footer);
+  font-size: 16px;
+
+  background-color: var(--bg-color-header-footer);
+  border-top: 2px solid var(--accent-color);
 }
 .footer .container {
   display: flex;
@@ -263,29 +263,34 @@ table {
 .footer .title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 500;
+
   font-size: 22px;
 }
 .second-part .item {
   margin-top: 0;
   margin-bottom: 10px;
 }
+.second-part .item:last-child {
+  margin-bottom: 0px;
+}
 .second-part .icon {
   display: flex;
+  margin-right: 10px;
   height: 15px;
   width: 15px;
-  margin-right: 10px;
 }
 .second-part {
   display: block;
   align-items: center;
-  color: gray;
+
+  color: var(--text-color-header-footer);
 }
 .second-part .link {
   display: inline-flex;
-  color: gray;
   align-items: center;
-  fill: gray;
+
+  color: var(--text-color-header-footer);
+  fill: var(--bg-color-primary);
 }
 .second-part .link:hover,
 .second-part .link:focus {
@@ -304,17 +309,18 @@ table {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid gray;
+
+  border: 1px solid var(--bg-color-primary);
+  border-radius: 50%;
   height: 44px;
   width: 44px;
-  border-radius: 50%;
-  color: gray;
-  fill: gray;
+  color: var(--text-color-secondary);
+  fill: var(--bg-color-primary);
 }
 .third-part .link:hover,
 .third-part .link:focus {
-  fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 .third-part .icon {
   width: 20px;
